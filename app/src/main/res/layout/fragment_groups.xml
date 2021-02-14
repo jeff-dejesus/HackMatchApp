@@ -14,7 +14,7 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/b1"
+            android:id="@+id/bg1"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_marginStart="2dp"
@@ -22,10 +22,11 @@
             android:layout_weight="1"
             android:backgroundTint="@color/medium_blue"
             android:text="Settings"
+            android:textSize="13sp"
             android:textStyle="bold" />
 
         <Button
-            android:id="@+id/b2"
+            android:id="@+id/bg2"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_marginStart="2dp"
@@ -33,21 +34,24 @@
             android:layout_weight="1"
             android:backgroundTint="@color/medium_blue"
             android:text="Chat"
+            android:textSize="13sp"
             android:textStyle="bold" />
 
         <Button
-            android:id="@+id/b3"
+            android:id="@+id/bg3"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_marginStart="2dp"
             android:layout_marginEnd="2dp"
             android:layout_weight="1"
             android:backgroundTint="@color/medium_blue"
+            android:enabled="false"
             android:text="Groups"
+            android:textSize="13sp"
             android:textStyle="bold" />
 
         <Button
-            android:id="@+id/b4"
+            android:id="@+id/bg4"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_marginStart="2dp"
@@ -55,11 +59,24 @@
             android:layout_weight="1"
             android:backgroundTint="@color/medium_blue"
             android:text="users"
+            android:textSize="13sp"
             android:textStyle="bold" />
     </LinearLayout>
 
-    <LinearLayout
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="593dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/groupmaker"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"></LinearLayout>
+        android:fontFamily="@font/trajan_pro_bold"
+        android:text="Create/edit Group" />
 </LinearLayout>

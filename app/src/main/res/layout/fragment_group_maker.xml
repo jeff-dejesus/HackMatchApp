@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/medium_blue"
+    android:gravity="center"
     android:orientation="vertical"
     android:padding="15dp"
     tools:context=".GroupMaker">
@@ -19,7 +20,7 @@
         android:textSize="24sp" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress"
+        android:id="@+id/groupname"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -27,15 +28,15 @@
         android:inputType="textEmailAddress" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress2"
+        android:id="@+id/groupfocus"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:hint="bio"
+        android:hint="focus"
         android:inputType="textEmailAddress" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress3"
+        android:id="@+id/groupmembers"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -46,19 +47,37 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <com.google.android.material.textfield.TextInputEditText
+        <EditText
+            android:id="@+id/groupbio"
             android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine" />
+
+        <TextView
+            android:id="@+id/groupbioprompts"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:hint="hint" />
+            android:layout_weight="1"
+            android:text="Group Info" />
     </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/groupdel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#670101"
+        android:text="Delete Group" />
 
     <TableRow
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:gravity="bottom|center_horizontal">
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/groupback"
             android:layout_width="182dp"
             android:layout_height="wrap_content"
             android:fontFamily="@font/trajan_pro_bold"
@@ -66,9 +85,10 @@
             android:textSize="14sp" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/groupsave"
             android:layout_width="182dp"
             android:layout_height="wrap_content"
+            android:backgroundTint="#054901"
             android:fontFamily="@font/trajan_pro_bold"
             android:text="Save" />
     </TableRow>

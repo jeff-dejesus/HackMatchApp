@@ -1,33 +1,51 @@
 package com.example.hackermatcher;
 
+import android.content.Intent;
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.EditText;
 
-public class GroupMaker extends Fragment {
+import androidx.appcompat.app.AppCompatActivity;
 
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
+public class GroupMaker extends AppCompatActivity implements View.OnClickListener {
 
-    public GroupMaker() {
-        // Required empty public constructor
-    }
-
-
+    EditText name, focus, members, bio;
+    Button delete, back, save;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        this.setContentView(R.layout.fragment_group_maker);
+        name = findViewById(R.id.groupname);
+        focus = findViewById(R.id.groupfocus);
+        members = findViewById(R.id.groupmembers);
+        bio = findViewById(R.id.groupbio);
+        delete = findViewById(R.id.groupdel);
+        back = findViewById(R.id.groupback);
+        save = findViewById(R.id.groupsave);
+        delete.setOnClickListener(this);
+        back.setOnClickListener(this);
+        save.setOnClickListener(this);
     }
 
+
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_group_maker, container, false);
+    public void onClick(View v) {
+        Intent intent = new Intent(this, Groups.class);
+        switch (v.getId()) {
+            case R.id.groupdel:
+                //delete group
+                break;
+            case R.id.groupback:
+                //return as normal
+                break;
+            default:
+                break;
+                //update group
+                //create group if null
+        }
+
+        startActivity(intent);
     }
 }

@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/dark_blue"
+    android:orientation="vertical"
     tools:context=".Users">
 
     <LinearLayout
@@ -13,7 +15,7 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/b1"
+            android:id="@+id/bu1"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_marginStart="2dp"
@@ -21,10 +23,11 @@
             android:layout_weight="1"
             android:backgroundTint="@color/medium_blue"
             android:text="Settings"
+            android:textSize="13sp"
             android:textStyle="bold" />
 
         <Button
-            android:id="@+id/b2"
+            android:id="@+id/bu2"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_marginStart="2dp"
@@ -32,10 +35,11 @@
             android:layout_weight="1"
             android:backgroundTint="@color/medium_blue"
             android:text="Chat"
+            android:textSize="13sp"
             android:textStyle="bold" />
 
         <Button
-            android:id="@+id/b3"
+            android:id="@+id/bu3"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_marginStart="2dp"
@@ -43,22 +47,30 @@
             android:layout_weight="1"
             android:backgroundTint="@color/medium_blue"
             android:text="Groups"
+            android:textSize="13sp"
             android:textStyle="bold" />
 
         <Button
-            android:id="@+id/b4"
+            android:id="@+id/bu4"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_marginStart="2dp"
             android:layout_marginEnd="2dp"
             android:layout_weight="1"
             android:backgroundTint="@color/medium_blue"
+            android:enabled="false"
             android:text="Users"
+            android:textSize="13sp"
             android:textStyle="bold" />
     </LinearLayout>
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"></LinearLayout>
-</FrameLayout>
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+    </ScrollView>
+</LinearLayout>

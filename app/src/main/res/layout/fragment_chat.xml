@@ -14,7 +14,7 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/b1"
+            android:id="@+id/bc1"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_marginStart="2dp"
@@ -22,21 +22,24 @@
             android:layout_weight="1"
             android:backgroundTint="@color/medium_blue"
             android:text="Settings"
+            android:textSize="13sp"
             android:textStyle="bold" />
 
         <Button
-            android:id="@+id/b2"
+            android:id="@+id/bc2"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_marginStart="2dp"
             android:layout_marginEnd="2dp"
             android:layout_weight="1"
             android:backgroundTint="@color/medium_blue"
+            android:enabled="false"
             android:text="Chat"
+            android:textSize="13sp"
             android:textStyle="bold" />
 
         <Button
-            android:id="@+id/b3"
+            android:id="@+id/bc3"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_marginStart="2dp"
@@ -44,10 +47,11 @@
             android:layout_weight="1"
             android:backgroundTint="@color/medium_blue"
             android:text="Groups"
+            android:textSize="13sp"
             android:textStyle="bold" />
 
         <Button
-            android:id="@+id/b4"
+            android:id="@+id/bc4"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_marginStart="2dp"
@@ -55,6 +59,7 @@
             android:layout_weight="1"
             android:backgroundTint="@color/medium_blue"
             android:text="Users"
+            android:textSize="13sp"
             android:textStyle="bold" />
     </LinearLayout>
 
@@ -74,7 +79,7 @@
         android:orientation="horizontal">
 
         <EditText
-            android:id="@+id/editTextTextPersonName"
+            android:id="@+id/msg"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -83,7 +88,7 @@
             android:text="message" />
 
         <Button
-            android:id="@+id/button3"
+            android:id="@+id/chatsend"
             android:layout_width="25dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"

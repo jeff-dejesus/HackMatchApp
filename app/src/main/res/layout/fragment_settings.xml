@@ -19,7 +19,7 @@
         android:textSize="24sp" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress"
+        android:id="@+id/name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -27,7 +27,7 @@
         android:inputType="textEmailAddress" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress2"
+        android:id="@+id/email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -35,7 +35,7 @@
         android:inputType="textEmailAddress" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress3"
+        android:id="@+id/school"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -43,7 +43,7 @@
         android:inputType="textEmailAddress" />
 
     <EditText
-        android:id="@+id/editTextPhone"
+        android:id="@+id/phone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -51,7 +51,7 @@
         android:inputType="phone" />
 
     <EditText
-        android:id="@+id/editTextPhone2"
+        android:id="@+id/linkedin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -63,9 +63,9 @@
         android:layout_height="wrap_content">
 
         <EditText
-            android:id="@+id/editTextTextMultiLine"
+            android:id="@+id/bio"
             android:layout_width="match_parent"
-            android:layout_height="140dp"
+            android:layout_height="150dp"
             android:layout_weight="1"
             android:ems="10"
             android:gravity="start|top"
@@ -73,7 +73,7 @@
             android:padding="7dp" />
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/bioprompt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -88,17 +88,10 @@
         android:gravity="bottom|center_horizontal">
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/settingssave"
             android:layout_width="182dp"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/trajan_pro_bold"
-            android:text="back"
-            android:textSize="14sp" />
-
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="182dp"
-            android:layout_height="wrap_content"
+            android:backgroundTint="#054901"
             android:fontFamily="@font/trajan_pro_bold"
             android:text="Save" />
     </TableRow>

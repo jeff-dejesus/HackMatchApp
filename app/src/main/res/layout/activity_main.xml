@@ -5,14 +5,90 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/dark_blue"
+    android:foregroundGravity="center"
+    android:gravity="center"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <fragment
-        android:id="@+id/fragment"
-        android:name="androidx.navigation.fragment.NavHostFragment"
+    <TextView
+        android:id="@+id/textView2"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:defaultNavHost="true"
-        app:navGraph="@navigation/nav_graph" />
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/trajan_pro_bold"
+        android:gravity="center_horizontal"
+        android:text="HackMeet"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="60sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="A platform where hackers can meet and share brilliant ideas. Meet hackers. Share ideas. Create hackathon groups. "
+        android:textAlignment="center"
+        android:textColor="@color/light_blue"
+        android:textSize="16sp"
+        android:textStyle="italic" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/bm1"
+                android:layout_width="175dp"
+                android:layout_height="175dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:backgroundTint="@color/light_grey"
+                android:fontFamily="@font/trajan_pro_bold"
+                android:text="My profile" />
+
+            <Button
+                android:id="@+id/bm2"
+                android:layout_width="175dp"
+                android:layout_height="175dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:backgroundTint="@color/light_grey"
+                android:fontFamily="@font/trajan_pro_bold"
+                android:text="Chat" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/bm3"
+                android:layout_width="175dp"
+                android:layout_height="175dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:backgroundTint="@color/light_grey"
+                android:fontFamily="@font/trajan_pro_bold"
+                android:text="Users" />
+
+            <Button
+                android:id="@+id/bm4"
+                android:layout_width="175dp"
+                android:layout_height="175dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:backgroundTint="@color/light_grey"
+                android:fontFamily="@font/trajan_pro_bold"
+                android:text="Groups" />
+        </TableRow>
+    </TableLayout>
 </LinearLayout>
