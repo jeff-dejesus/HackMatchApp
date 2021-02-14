@@ -3,35 +3,93 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/dark_blue"
+    android:gravity="center|center_horizontal"
     android:orientation="vertical"
     tools:context=".Dashboard">
 
     <!-- TODO: Update blank fragment layout -->
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button" />
-
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="350dp"
-        android:layout_height="99dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/trajan_pro_bold"
+        android:gravity="center_horizontal"
         android:text="HackMeet"
         android:textAlignment="center"
-        android:textColor="#5C6BC0"
-        android:textSize="50"
-        android:translationX="29"
-        android:translationY="200" />
+        android:textColor="@color/white"
+        android:textSize="60sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="match_parent"
-        android:layout_height="20"
-        android:text="A platform where we can meet hackers with same interests"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="A platform where hackers can meet and share brilliant ideas. Meet hackers. Share ideas. Create hackathon groups. "
         android:textAlignment="center"
-        android:translationX="0"
-        android:translationY="300" />
+        android:textColor="@color/light_blue"
+        android:textSize="16sp"
+        android:textStyle="italic" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="175dp"
+                android:layout_height="175dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:backgroundTint="@color/light_grey"
+                android:fontFamily="@font/trajan_pro_bold"
+                android:text="My profile" />
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="175dp"
+                android:layout_height="175dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:backgroundTint="@color/light_grey"
+                android:fontFamily="@font/trajan_pro_bold"
+                android:text="Chat" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="175dp"
+                android:layout_height="175dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:backgroundTint="@color/light_grey"
+                android:fontFamily="@font/trajan_pro_bold"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="175dp"
+                android:layout_height="175dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:backgroundTint="@color/light_grey"
+                android:fontFamily="@font/trajan_pro_bold"
+                android:text="Button" />
+        </TableRow>
+    </TableLayout>
 
 </LinearLayout>
