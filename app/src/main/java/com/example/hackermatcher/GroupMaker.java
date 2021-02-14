@@ -21,6 +21,7 @@ public class GroupMaker extends AppCompatActivity implements View.OnClickListene
         focus = findViewById(R.id.groupfocus);
         members = findViewById(R.id.groupmembers);
         bio = findViewById(R.id.groupbio);
+
         delete = findViewById(R.id.groupdel);
         back = findViewById(R.id.groupback);
         save = findViewById(R.id.groupsave);
@@ -32,6 +33,11 @@ public class GroupMaker extends AppCompatActivity implements View.OnClickListene
 
     @Override
     public void onClick(View v) {
+        String gName = name.getText().toString();
+        String gFocus = focus.getText().toString();
+        String gMembers = members.getText().toString();
+        String gBio = bio.getText().toString();
+
         Intent intent = new Intent(this, Groups.class);
         switch (v.getId()) {
             case R.id.groupdel:

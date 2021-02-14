@@ -1,5 +1,6 @@
 package com.example.hackermatcher;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -29,6 +30,14 @@ public class Settings extends AppCompatActivity implements View.OnClickListener 
 
     @Override
     public void onClick(View v) {
+        String userName = name.getText().toString();
+        String userEmail = email.getText().toString();
+        String userSchool = school.getText().toString();
+        String userPhone = phone.getText().toString();
+        String userLinkedin = linkedin.getText().toString();
+        String userBio = bio.getText().toString();
 
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
     }
 }
