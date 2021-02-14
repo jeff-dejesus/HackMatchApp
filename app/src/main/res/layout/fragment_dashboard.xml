@@ -14,4 +14,24 @@
         android:layout_height="wrap_content"
         android:text="Button" />
 
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="350dp"
+        android:layout_height="99dp"
+        android:text="HackMeet"
+        android:textAlignment="center"
+        android:textColor="#5C6BC0"
+        android:textSize="50"
+        android:translationX="29"
+        android:translationY="200" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="20"
+        android:text="A platform where we can meet hackers with same interests"
+        android:textAlignment="center"
+        android:translationX="0"
+        android:translationY="300" />
+
 </LinearLayout>
