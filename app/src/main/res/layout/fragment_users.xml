@@ -72,6 +72,78 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" />
+            android:layout_margin="7dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/uPrev"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:drawable/ic_media_play"
+                    android:backgroundTint="@color/white"
+                    android:rotationY="180" />
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="325dp"
+                    android:layout_height="218dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/programmer" />
+
+                <Button
+                    android:id="@+id/uNext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:drawable/ic_media_play"
+                    android:backgroundTint="@color/white" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/userName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/trajan_pro_bold"
+                android:text="TextView"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/userLinkedin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="TextView"
+                android:textColor="@color/light_blue"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/userEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="TextView"
+                android:textColor="@color/light_blue"
+                android:textSize="22sp" />
+
+            <TextView
+                android:id="@+id/userBio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="7dp"
+                android:background="@color/medium_blue"
+                android:fontFamily="@font/lato"
+                android:text="TextView"
+                android:textColor="@color/light_blue"
+                android:textSize="18sp" />
+        </LinearLayout>
     </ScrollView>
 </LinearLayout>
